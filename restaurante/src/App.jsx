@@ -1,6 +1,10 @@
 import './App.css';
 import Header from './components/Header/Header'
 import Home from './components/Home/Home.jsx'
+import Reserve from './components/Reserve/Reserve';
+import {BrowserRouter,Route,Routes} from 'react-router-dom'
+import Address from './components/Address/Address';
+
 
 
 function App() {
@@ -30,8 +34,14 @@ function App() {
   
   return (
     <div className="App">
+      <BrowserRouter>
       <Header />
-      <Home menu={dishes}/>
+      <Routes>
+        <Route path='/' element={<Home menu={dishes}/>}/>
+        <Route path='/reserve' element={<Reserve />}/>
+        <Route path='/address' element={<Address/>} />
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }

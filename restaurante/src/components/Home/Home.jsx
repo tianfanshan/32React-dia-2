@@ -4,7 +4,6 @@ import '../Home/Home.css'
 
 const Home = (props) => {
     const platos = props.menu.map((plato)=>{
-        console.log(props.menu)
         return(
             <div key={plato.id}>
                 <img src={plato.img} alt="" className='img'/>
