@@ -1,0 +1,10 @@
+.img{
+    padding: 10px;
+    height: 280px;
+    width: 320px;
+}
+
+.home{
+    display: flex;
+}
+
