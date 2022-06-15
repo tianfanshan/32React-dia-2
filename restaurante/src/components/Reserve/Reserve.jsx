@@ -11,20 +11,16 @@ const Reserve = () => {
     const date = new Date()
     const currentDate = date.getDate()
     let navigate =useNavigate()
-    const [data,setData] = useState({
-        name:'',
-        phoneNumber:'',
-        reserva:'',
-        date:currentDate
-    })
-    const [btnDisabled,setBtnDisabled] = useState(true)
-    const [message,setMessage] = useState('')
     const initialState = {
         name:'',
         phoneNumber:'',
         reserva:'',
-        date:''
+        date:currentDate
     }
+    const [data,setData] = useState({initialState})
+    const [btnDisabled,setBtnDisabled] = useState(true)
+    const [message,setMessage] = useState('')
+
     const clearState = () =>{
         setData({...initialState})
     }
