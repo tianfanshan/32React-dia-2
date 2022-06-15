@@ -71,6 +71,7 @@ const Reserve = () => {
             value={data.reserva}
             onChange={handleInputChange}
             name='reserva'
+            min={new Date().toISOString().split("T")[0]}
         />
         <button type='submit' disabled={btnDisabled}>Enviar</button>
         </form>
