@@ -1,6 +1,5 @@
 import React from 'react'
 import '../Home/Home.css'
-// import img from '../../assets/1337242483632.jpg'
 
 const Home = (props) => {
     const platos = props.menu.map((plato)=>{
@@ -14,7 +13,6 @@ const Home = (props) => {
   return (
     <div>
         <h1>Menu del dia</h1>
-        {/* <img src={img} alt="" /> */}
         <div className='home'>
         {platos}
         </div>
