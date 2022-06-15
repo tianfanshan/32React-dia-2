@@ -5,6 +5,29 @@
 }
 
 .home{
+    background-image: url(../../../public/assets/variety-defferent-many-ingredients-cooking-tasty-oriental-asian-food-top-view-with-copy-space-dark-background-toning.jpg);
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
 }
+
+.font{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 50hv;
+    border: 1px solid #000;
+    border-radius: 15px;
+    background-color: aliceblue;
+    margin-bottom: 2em;
+}
+
 

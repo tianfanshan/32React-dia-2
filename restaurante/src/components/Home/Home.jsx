@@ -4,7 +4,7 @@ import '../Home/Home.css'
 const Home = (props) => {
     const platos = props.menu.map((plato)=>{
         return(
-            <div key={plato.id}>
+            <div key={plato.id} className='card'>
                 <img src={plato.img} alt="" className='img'/>
                 <p>El plato es {plato.name},es como {plato.description},y cuesta {plato.price}</p>
             </div>
