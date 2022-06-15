@@ -14,6 +14,7 @@ const Reserve = () => {
     const [data,setData] = useState({
         name:'',
         phoneNumber:'',
+        reserva:'',
         date:currentDate
     })
     const [btnDisabled,setBtnDisabled] = useState(true)
@@ -21,6 +22,7 @@ const Reserve = () => {
     const initialState = {
         name:'',
         phoneNumber:'',
+        reserva:'',
         date:''
     }
     const clearState = () =>{
@@ -63,6 +65,12 @@ const Reserve = () => {
             value={data.phoneNumber}
             onChange={handleInputChange}
             name='phoneNumber'
+        />
+        <input type="date"
+            placeholder='reserva'
+            value={data.reserva}
+            onChange={handleInputChange}
+            name='reserva'
         />
         <button type='submit' disabled={btnDisabled}>Enviar</button>
         </form>
